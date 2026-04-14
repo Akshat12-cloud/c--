@@ -1,3 +1,4 @@
+//find two pairs whose sum is equal to given number.
 #include<iostream>
 using namespace std;
 void findpairs(int arr[],int size,int sum){
