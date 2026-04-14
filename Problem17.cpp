@@ -1,4 +1,4 @@
- 
+//array intersection. 
 #include<iostream>
 using namespace std;
 void intersection(int A1[],int A2[],int size1,int size2){
@@ -16,7 +16,7 @@ int main(){
     int A2[]={2,3,4,5,6,7,8,9};
     int size1=sizeof(A1)/sizeof(A1[0]);
     int size2=sizeof(A2)/sizeof(A2[0]);
-    
+
     intersection(A1,A2,size1,size2);
     return 0;
 }
