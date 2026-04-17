@@ -19,9 +19,9 @@ void reversearray(int arr[],int size){
     }
 }
 int main(){
-    int arr[6]={1,2,3,4,5,6};
-    reverse(arr,6);
-    reversearray(arr,6);
+    int arr[7]={1,2,3,4,5,6,4};
+    reverse(arr,7);
+    reversearray(arr,7);
 
     return 0;
 }
