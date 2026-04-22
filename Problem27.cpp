@@ -13,7 +13,7 @@ long long int squareroot_int(int num){
             return mid;
         }
         else if(num>square){
-            ans=num;
+            ans=mid;
             s=mid +1;
         }
         else{
