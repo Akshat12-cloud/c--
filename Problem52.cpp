@@ -1,4 +1,4 @@
-// Q.Find the sum of each row.
+// Q...Find the sum of each row.
 #include <iostream>
 using namespace std;
 
