@@ -1,4 +1,4 @@
-//Reverse a number recursively.
+// Q.Reverse a number recursively.
 #include <iostream>
 
 int reverseNumber(int n, int rev = 0) {
