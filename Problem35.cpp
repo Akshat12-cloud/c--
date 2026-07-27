@@ -1,4 +1,4 @@
-//find first and last occurance of an elememnt in a array.
+// Q.find first and last occurance of an elememnt in a array.
 #include<iostream>
 using namespace std ;
 int firstoccurance(int arr[],int size,int key)
