@@ -1,27 +1,66 @@
 // union of two array.
-#include<iostream>
-#include<vector>
-using namespace std;
-void unionarray(int arr1,int n,int arr2,int m){
-    
-    int i=0;
-    int j=0;
-    while(i<n && j<m){
-        if(arr1[i] < arr2[j]){
+#include <iostream>
+#include <vector>
 
+using namespace std;
+
+vector<int> unionArray(vector<int>& a, vector<int>& b) {
+    vector<int> ans;
+
+    int i = 0;
+    int j = 0;
+
+    while (i < a.size() && j < b.size()) {
+
+        if (a[i] < b[j]) {
+
+            if (ans.empty() || ans.back() != a[i]) {
+                ans.push_back(a[i]);
+            }
+
+            i++;
         }
 
+        else if (a[i] > b[j]) {
 
+            if (ans.empty() || ans.back() != b[j]) {
+                ans.push_back(b[j]);
+            }
+
+            j++;
+        }
+
+        else {
+
+            if (ans.empty() || ans.back() != a[i]) {
+                ans.push_back(a[i]);
+            }
+
+            i++;
+            j++;
+        }
     }
 
-}
+    while (i < a.size()) {
 
-int main(){
-    vector <int> arr1={10,10,20,20,50,60};
-    vector<int> arr2={10,10,20,20,30};
-    vector<int> arr3={0};
-    unionarray(arr1,6,arr2,5);
-    
+        if (ans.empty() || ans.back() != a[i]) {
+            ans.push_back(a[i]);
+        }
+
+        i++;
+    }
+
+    while (j < b.size()) {
+
+        if (ans.empty() || ans.back() != b[j]) {
+            ans.push_back(b[j]);
+        }
+
+        j++;
+    }
+
+    return ans;
+}
 
 
 
