@@ -1,3 +1,5 @@
+// find the number of elements which has even character in the array.
+
 #include<iostream>
 
 using namespace std;

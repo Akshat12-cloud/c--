@@ -8,7 +8,6 @@ void findpairs(int arr[],int size,int sum){
                 cout<<arr[i]<<" "<<arr[j]<<endl;
             }
         }
-
     }
 }
 
