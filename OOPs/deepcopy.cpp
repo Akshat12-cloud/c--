@@ -18,8 +18,9 @@ class hero{
     hero(hero &temp){
         this->health=temp.health;
         this->level=temp.level;
-        this->name=new char[100];
-        strcpy(this->name,temp.name);
+        char *ch=new char[strlen(temp.name)+1];
+        strcpy(ch,temp.name);
+        this->name=ch;
     }
 
 
@@ -49,10 +50,14 @@ int main(){
     hero1.setlevel('B');
     char name[]="akshat";
     hero1.setname(name);
+
+    
+    hero hero2(hero1);
+    
     hero1.name[0]='G';
     hero1.print();
-    hero hero2(hero1);
     hero2.print();
+
 
     
     return 0;
