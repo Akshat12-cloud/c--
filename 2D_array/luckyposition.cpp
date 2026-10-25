@@ -37,4 +37,4 @@ int main(){
     vector<vector<int>> arr ={{1,0,0},{0,1,0},{1,0,1}};
     int ans=luckynumber(arr);
 }
-.
+//
